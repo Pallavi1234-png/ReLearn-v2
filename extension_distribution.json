@@ -1,0 +1,67 @@
+{
+  "_note": "PROJECT EXTENSION - authored by the Re:Learn team, NOT part of the supplied datasets. Added because the headline demo (3(x+2)=15) needs a distribution-error record, which the 64-item taxonomy does not contain. Every id is prefixed EXT- so it is never confused with supplied data.",
+  "misconceptions": [
+    {
+      "misconception_id": "EXT-DIST-01",
+      "topic": "Algebraic Expressions",
+      "misconception_name": "Distributes the multiplier to only the first term inside brackets",
+      "misconception_type": "Distribution error",
+      "description": "When expanding c(x + d), the learner multiplies x by c but leaves d unchanged, giving cx + d.",
+      "typical_student_behavior": "Writes 3(x + 2) = 15 as 3x + 2 = 15, then solves correctly from the wrong line.",
+      "evidence_pattern": "A step contains c*x + d (or c*x - d) where the previous line had c(x + d) (or c(x - d)).",
+      "example_wrong_working": "3(x + 2) = 15 -> 3x + 2 = 15 -> 3x = 13 -> x = 13/3",
+      "correct_concept": "The distributive property: a(b + c) = ab + ac. The multiplier must be applied to EVERY term inside the bracket.",
+      "severity": "High"
+    }
+  ],
+  "interventions": [
+    {
+      "intervention_id": "EXT-INT-DIST-01",
+      "misconception_id": "EXT-DIST-01",
+      "topic": "Algebraic Expressions",
+      "misconception_name": "Distributes the multiplier to only the first term inside brackets",
+      "misconception_type": "Distribution error",
+      "intervention_type": "Worked example",
+      "intervention_text": "The number outside the bracket multiplies EVERYTHING inside it. Think of 3(x + 2) as three groups of (x + 2): that is x + 2 + x + 2 + x + 2 = 3x + 6.",
+      "hint": "Draw an arrow from the outside number to each term inside the bracket.",
+      "worked_example": "Worked example: 2(x + 3) = 2x + 2*3 = 2x + 6. Check with x = 1: 2(1 + 3) = 8 and 2(1) + 6 = 8.",
+      "reassessment_question": "Solve 4(x + 3) = 28.",
+      "expected_answer": "x = 4",
+      "transfer_question": "Meena buys 3 notebooks. Each costs (x + 5) rupees and she pays Rs 36 in total. Write an equation and find x.",
+      "transfer_expected_answer": "x = 7",
+      "success_criteria": "Reassessment correct with 4x + 12 = 28 shown; transfer correct with the equation written as 3(x + 5) = 36 and expanded to 3x + 15."
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "EXT-Q9-DIST-001",
+      "standard": 9,
+      "board": "Maharashtra State Board (SSC)",
+      "subject": "Mathematics",
+      "chapter": "Algebraic Expressions",
+      "topic": "Distributive property",
+      "subtopic": "Solving with brackets",
+      "difficulty": "Easy",
+      "question_type": "Solve",
+      "question": "Solve 3(x + 2) = 15",
+      "expected_answer": "x = 3",
+      "correct_solution": "3x + 6 = 15; 3x = 9; x = 3",
+      "candidate_misconception_ids": "EXT-DIST-01"
+    },
+    {
+      "question_id": "EXT-Q9-DIST-002",
+      "standard": 9,
+      "board": "Maharashtra State Board (SSC)",
+      "subject": "Mathematics",
+      "chapter": "Algebraic Expressions",
+      "topic": "Distributive property",
+      "subtopic": "Solving with brackets",
+      "difficulty": "Medium",
+      "question_type": "Solve",
+      "question": "Solve 5(x - 4) = 20",
+      "expected_answer": "x = 8",
+      "correct_solution": "5x - 20 = 20; 5x = 40; x = 8",
+      "candidate_misconception_ids": "EXT-DIST-01"
+    }
+  ]
+}
